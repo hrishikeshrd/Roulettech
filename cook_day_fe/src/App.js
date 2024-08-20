@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import RecipeList from './components/RecipeList';
+
 
 function App() {
-    const [message, setMessage] = useState('');
-
-    useEffect(() => {
-        axios.get('/api/hello/')
-            .then(response => setMessage(response.data.message))
-            .catch(error => console.error('There was an error!', error));
-    }, []);
-
-    return (
-        <div className="App">
-            <h1>{message}</h1>
-        </div>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<RecipeList />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
