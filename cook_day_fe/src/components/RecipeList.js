@@ -15,7 +15,18 @@ const RecipeList = () => {
   }, []);
 
   return (
-    <div className="recipe-list">
+    <>
+            <h2 style={{
+  textAlign: 'center',
+  fontSize: '2em',
+  color: '#FF4D00',  
+  fontFamily: "'Montserrat', sans-serif", 
+  textTransform: 'uppercase',
+  marginBottom: '20px',
+  letterSpacing: '2px',
+  
+}}>Our Speciality</h2>
+            <div className="recipe-list">
       {recipes.map(recipe => (
         <RecipeCard
           key={recipe.id}
@@ -25,6 +36,8 @@ const RecipeList = () => {
         />
       ))}
     </div>
+
+    </>
   );
 };
 
