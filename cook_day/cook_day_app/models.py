@@ -21,3 +21,13 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class UserRecipe(models.Model):
+    username = models.CharField(max_length=255,default = 'admin')
+    dishname = models.TextField(default = 'Dosa')
+    ingredients = models.TextField(default = "Rice batter, water, salt, curd")
+    instructions = models.TextField(default= "mix well and cook on low flame")
+
+    def __str__(self):
+        return f"{self.username}'s {self.dishname}"

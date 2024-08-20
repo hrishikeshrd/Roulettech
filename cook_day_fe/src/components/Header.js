@@ -9,7 +9,7 @@ const Header = () => {
         <img src="/logo/kangacook_logo.svg" alt="Logo" />
       </div>
       <div className="site-name">
-        <h1>Cook Day</h1>
+        <h1>CookBook Corner</h1>
       </div>
       <nav className="nav-links">
         <a href="/">Home</a>

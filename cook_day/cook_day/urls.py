@@ -21,17 +21,18 @@ from rest_framework.routers import DefaultRouter
 from cook_day_app.views import RecipeViewSet, IngredientViewSet, CategoryViewSet
 from django.conf import settings
 from django.conf.urls.static import static
+from cook_day_app.views import *
 
 router = DefaultRouter()
 router.register(r'recipes', RecipeViewSet)
 router.register(r'ingredients', IngredientViewSet)
 router.register(r'categories', CategoryViewSet)
 
-
 urlpatterns = [
     path('admin/', admin.site.urls), 
     path('api/', include(router.urls)),
     path('api/hello/', hello_world),
+     path('api/submit-recipe/', submit_recipe, name='submit-recipe'),
 ]
 
 if settings.DEBUG:

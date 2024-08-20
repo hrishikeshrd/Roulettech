@@ -10,9 +10,10 @@ const BlogPage = () => {
     ingredients: '',
     instructions: '',
   });
+  const [message, setMessage] = useState('');  // New state to store the response message
 
+  // Fetch popular recipes from the backend when the component mounts
   useEffect(() => {
-    // Fetch popular recipes from the backend using fetch
     fetch('http://127.0.0.1:8000/api/popular-recipes/')
       .then((response) => {
         if (!response.ok) {
@@ -57,12 +58,13 @@ const BlogPage = () => {
         return response.json();
       })
       .then((data) => {
-        console.log('Recipe submitted successfully:', data);
+        setMessage(data.message);  // Set the message from the server response
         setFormVisible(false);
         setFormData({ username: '', dishname: '', ingredients: '', instructions: '' }); // Reset form
       })
       .catch((error) => {
         console.error('Error submitting recipe:', error);
+        setMessage('There was an error submitting your recipe.');
       });
   };
 
@@ -76,18 +78,24 @@ const BlogPage = () => {
         We will choose from the recipes, and your recipe will be displayed in "Our Specialty" in the following week.
       </p>
 
+      {/* Display the response message */}
+      {message && <p className="response-message">{message}</p>}
+
       {/* Popular Recipes Section */}
       <div className="popular-recipes">
         <h2>Popular Recipes from Last Week</h2>
         <div className="recipe-cards">
           {popularRecipes.map((recipe) => (
             <div key={recipe.id} className="recipe-card-horizontal">
-              <h3>{recipe.recipeTitle}</h3>
+              <h3>{recipe.dishname}</h3>
               <p>
                 <strong>Shared by:</strong> {recipe.username}
               </p>
               <p>
                 <strong>Ingredients:</strong> {recipe.ingredients}
+              </p>
+              <p>
+                <strong>Instructions:</strong> {recipe.instructions}
               </p>
             </div>
           ))}

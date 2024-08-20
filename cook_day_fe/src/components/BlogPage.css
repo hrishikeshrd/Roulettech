@@ -25,7 +25,7 @@
   
   .share-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #FF4D00;
     color: white;
     border: none;
     border-radius: 5px;
@@ -35,7 +35,7 @@
   }
   
   .share-button:hover {
-    background-color: #45a049;
+    background-color: #932d02;
   }
   
   .recipe-form {
@@ -70,7 +70,7 @@
   
   .submit-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #FF4D00;
     color: white;
     border: none;
     border-radius: 5px;
@@ -80,6 +80,16 @@
   }
   
   .submit-button:hover {
-    background-color: #45a049;
+    background-color: #932d02;
   }
+
+  .response-message {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #333;
+    font-size: 1.1em;
+  }
+  
   
