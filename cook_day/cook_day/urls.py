@@ -16,8 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from cook_day_app.views import hello_world
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from cook_day_app.views import RecipeViewSet, IngredientViewSet, CategoryViewSet
+
+router = DefaultRouter()
+router.register(r'recipes', RecipeViewSet)
+router.register(r'ingredients', IngredientViewSet)
+router.register(r'categories', CategoryViewSet)
+
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('api/', include(router.urls)),
     path('api/hello/', hello_world),
 ]

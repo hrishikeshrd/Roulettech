@@ -1,0 +1,151 @@
+[
+    {
+        "model": "cook_day_app.category",
+        "pk": 1,
+        "fields": {
+            "name": "Breakfast"
+        }
+    },
+    {
+        "model": "cook_day_app.category",
+        "pk": 2,
+        "fields": {
+            "name": "Lunch"
+        }
+    },
+    {
+        "model": "cook_day_app.category",
+        "pk": 3,
+        "fields": {
+            "name": "Dinner"
+        }
+    },
+    {
+        "model": "cook_day_app.category",
+        "pk": 4,
+        "fields": {
+            "name": "Dessert"
+        }
+    },
+    {
+        "model": "cook_day_app.category",
+        "pk": 5,
+        "fields": {
+            "name": "Snacks"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "Eggs"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 2,
+        "fields": {
+            "name": "Milk"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 3,
+        "fields": {
+            "name": "Flour"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 4,
+        "fields": {
+            "name": "Sugar"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 5,
+        "fields": {
+            "name": "Salt"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 6,
+        "fields": {
+            "name": "Butter"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 7,
+        "fields": {
+            "name": "Chicken Breast"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 8,
+        "fields": {
+            "name": "Tomatoes"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 9,
+        "fields": {
+            "name": "Lettuce"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 10,
+        "fields": {
+            "name": "Cheese"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 11,
+        "fields": {
+            "name": "Chocolate"
+        }
+    },
+    {
+        "model": "cook_day_app.ingredient",
+        "pk": 12,
+        "fields": {
+            "name": "Vanilla Extract"
+        }
+    },
+    {
+        "model": "cook_day_app.recipe",
+        "pk": 1,
+        "fields": {
+            "title": "Pancakes",
+            "category": 1,
+            "instructions": "In a large bowl, whisk together the flour, sugar, baking powder, and salt. In another bowl, beat the eggs, then add milk and melted butter. Pour the wet ingredients into the dry ingredients and stir until combined. Heat a pan over medium heat and cook pancakes until golden on each side. Serve with syrup and butter.",
+            "ingredients": [1, 2, 3, 4, 5, 6]
+        }
+    },
+    {
+        "model": "cook_day_app.recipe",
+        "pk": 2,
+        "fields": {
+            "title": "Grilled Chicken Salad",
+            "category": 2,
+            "instructions": "Season the chicken breast with salt and pepper, then grill until fully cooked. Chop the lettuce and tomatoes, and shred the cheese. Slice the chicken and toss it with the lettuce, tomatoes, and cheese. Drizzle with your favorite dressing and serve.",
+            "ingredients": [7, 8, 9, 10]
+        }
+    },
+    {
+        "model": "cook_day_app.recipe",
+        "pk": 3,
+        "fields": {
+            "title": "Chocolate Cake",
+            "category": 4,
+            "instructions": "Preheat your oven to 350°F (175°C). Grease and flour a cake pan. Melt the chocolate and butter in a saucepan over low heat. In a bowl, beat the eggs with sugar until light and fluffy. Gradually add the melted chocolate and butter mixture to the eggs. Sift in the flour and stir until well combined. Add vanilla extract. Pour the batter into the prepared pan and bake for 25-30 minutes. Let the cake cool before serving.",
+            "ingredients": [3, 4, 6, 1, 11, 12]
+        }
+    }
+]
