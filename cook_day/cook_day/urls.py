@@ -32,7 +32,9 @@ urlpatterns = [
     path('admin/', admin.site.urls), 
     path('api/', include(router.urls)),
     path('api/hello/', hello_world),
-     path('api/submit-recipe/', submit_recipe, name='submit-recipe'),
+    path('api/submit-recipe/', submit_recipe, name='submit-recipe'),
+    path('api/user-recipes/', get_user_recipes, name='user-recipes'),  # New route
+
 ]
 
 if settings.DEBUG:

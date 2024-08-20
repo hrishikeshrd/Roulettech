@@ -1,37 +1,60 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 30px 30px 30px;
-    background-color: white; /* Example background color */
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 80px
-  }
-  
-  .logo img {
-    height: 80px; /* Adjust the logo size */
-  }
-  
-  .site-name h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-links a {
-    color: rgb(86, 22, 22);
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #ffeb3b; /* Hover color */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  z-index: 100;
+}
+
+.logo img {
+  height: 80px; /* Adjust the logo size */
+}
+
+.site-name h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: rgb(86, 22, 22);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ff4d00;
+  transform: scale(1.1);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff4d00;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

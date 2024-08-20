@@ -1,5 +1,5 @@
 .blog-page {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
   }
@@ -39,7 +39,7 @@
   }
   
   .recipe-form {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
@@ -90,6 +90,54 @@
     background-color: #f0f8ff;
     color: #333;
     font-size: 1.1em;
+  }
+  .recipe-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .recipe-list-item {
+    display: block;  /* Ensure each list item takes up the full width */
+    width: 100%;  /* Prevents multiple items from appearing in the same row */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 1.1em;
+    box-sizing: border-box; /* Include padding and border in element's width */
+  }
+  
+  .recipe-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #FF4D00; /* Highlight the recipe name */
+    margin-bottom: 10px;
+  }
+  
+  .recipe-details {
+    margin-left: 10px;
+  }
+  
+  .recipe-details div {
+    margin-bottom: 5px;
+  }
+  
+  .recipe-details strong {
+    color: #333; /* Differentiate the labels for ingredients, instructions, and user */
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif; /* Choose a stylish serif font */
+    font-size: 2.5em; /* Make the font size large for emphasis */
+    color: #96360c; /* Use your orange highlight color */
+    text-align: center; /* Center the title */
+    margin-bottom: 30px; /* Add spacing below the title */
+    letter-spacing: 2px; /* Add some space between the letters */
+    text-transform: uppercase; /* Make all letters uppercase for impact */
+    font-weight: bold; /* Ensure the font weight is bold */
   }
   
   

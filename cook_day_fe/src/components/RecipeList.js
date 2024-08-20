@@ -16,7 +16,7 @@ const RecipeList = () => {
 
   return (
     <>
-            <h2 style={{
+            {/* <h2 style={{
   textAlign: 'center',
   fontSize: '2em',
   color: '#FF4D00',  
@@ -25,7 +25,7 @@ const RecipeList = () => {
   marginBottom: '20px',
   letterSpacing: '2px',
   
-}}>Our Speciality</h2>
+}}>Our Speciality</h2> */}
             <div className="recipe-list">
       {recipes.map(recipe => (
         <RecipeCard

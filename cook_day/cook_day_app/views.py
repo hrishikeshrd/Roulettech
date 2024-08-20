@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import viewsets
 from .models import Recipe, Ingredient, Category, UserRecipe
-from .serializers import RecipeSerializer, IngredientSerializer, CategorySerializer
+from .serializers import RecipeSerializer, IngredientSerializer, CategorySerializer, UserRecipeSerializer
 from rest_framework import status
 
 import logging
@@ -16,6 +16,15 @@ logger = logging.getLogger(__name__)
 def hello_world(request):
     return Response({"message": "Hello, world!"})
 
+
+@api_view(['GET'])
+def get_user_recipes(request):
+    try:
+        user_recipes = UserRecipe.objects.all()
+        serializer = UserRecipeSerializer(user_recipes, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 def submit_recipe(request):
