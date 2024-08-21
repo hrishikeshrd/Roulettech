@@ -13,7 +13,7 @@ const Header = () => {
       case '/blog':
         return 'Shared Delights';
       case '/contact':
-        return 'Contact Us';
+        return "Let's Connect!";
       default:
         return 'CookBook Corner';
     }
