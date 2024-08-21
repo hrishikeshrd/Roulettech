@@ -1,143 +1,141 @@
 .blog-page {
-    padding: 30px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .quote {
-    font-size: 1.5em;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  .share-button {
-    padding: 10px 20px;
-    background-color: #FF4D00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-  }
-  
-  .share-button:hover {
-    background-color: #932d02;
-  }
-  
-  .recipe-form {
-    margin-top: 20px;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .submit-button {
-    padding: 10px 20px;
-    background-color: #FF4D00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-button:hover {
-    background-color: #932d02;
-  }
+  padding: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .response-message {
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f0f8ff;
-    color: #333;
-    font-size: 1.1em;
-  }
-  .recipe-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .recipe-list-item {
-    display: block;  /* Ensure each list item takes up the full width */
-    width: 100%;  /* Prevents multiple items from appearing in the same row */
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-size: 1.1em;
-    box-sizing: border-box; /* Include padding and border in element's width */
-  }
-  
-  .recipe-title {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #FF4D00; /* Highlight the recipe name */
-    margin-bottom: 10px;
-  }
-  
-  .recipe-details {
-    margin-left: 10px;
-  }
-  
-  .recipe-details div {
-    margin-bottom: 5px;
-  }
-  
-  .recipe-details strong {
-    color: #333; /* Differentiate the labels for ingredients, instructions, and user */
-  }
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-  .section-title {
-    font-family: 'Playfair Display', serif; /* Choose a stylish serif font */
-    font-size: 2.5em; /* Make the font size large for emphasis */
-    color: #96360c; /* Use your orange highlight color */
-    text-align: center; /* Center the title */
-    margin-bottom: 30px; /* Add spacing below the title */
-    letter-spacing: 2px; /* Add some space between the letters */
-    text-transform: uppercase; /* Make all letters uppercase for impact */
-    font-weight: bold; /* Ensure the font weight is bold */
-  }
-  
-  
+.quote {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.share-button {
+  padding: 10px 20px;
+  background-color: #FF4D00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.share-button:hover {
+  background-color: #932d02;
+}
+
+.recipe-form {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #FF4D00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #932d02;
+}
+
+.response-message {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+  color: #333;
+  font-size: 1.1em;
+}
+.recipe-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.recipe-list-item {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+.recipe-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #FF4D00;
+  margin-bottom: 10px;
+}
+
+.recipe-details {
+  margin-left: 10px;
+}
+
+.recipe-details div {
+  margin-bottom: 5px;
+}
+
+.recipe-details strong {
+  color: #333;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #96360c;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

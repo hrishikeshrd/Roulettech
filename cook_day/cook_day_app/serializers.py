@@ -19,4 +19,4 @@ class CategorySerializer(serializers.ModelSerializer):
 class UserRecipeSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserRecipe
-        fields = '__all__'  # Or specify the fields you want to expose
+        fields = '__all__'  

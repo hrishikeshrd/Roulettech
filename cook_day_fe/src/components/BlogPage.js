@@ -10,9 +10,8 @@ const BlogPage = () => {
     ingredients: '',
     instructions: '',
   });
-  const [message, setMessage] = useState('');  // State for response messages
+  const [message, setMessage] = useState(''); 
 
-  // Fetch user recipes when the component mounts
   useEffect(() => {
     fetch('http://127.0.0.1:8000/api/user-recipes/')
       .then((response) => {
@@ -43,7 +42,7 @@ const BlogPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the recipe data to the backend
+    
     fetch('http://127.0.0.1:8000/api/submit-recipe/', {
       method: 'POST',
       headers: {
@@ -52,16 +51,16 @@ const BlogPage = () => {
       body: JSON.stringify(formData),
     })
       .then((response) => {
+        {/* console.log("\n response here  ---- ", response) */}
         if (!response.ok) {
           throw new Error('Failed to submit the recipe');
         }
         return response.json();
       })
       .then((data) => {
-        setMessage(data.message);  // Set the message from the server response
+        setMessage(data.message);  
         setFormVisible(false);
-        setFormData({ username: '', dishname: '', ingredients: '', instructions: '' }); // Reset form
-        // Fetch the updated list of user recipes
+        setFormData({ username: '', dishname: '', ingredients: '', instructions: '' }); 
         fetch('http://127.0.0.1:8000/api/user-recipes/')
           .then(response => response.json())
           .then(data => setUserRecipes(data));
@@ -74,22 +73,9 @@ const BlogPage = () => {
 
   return (
     <div className="blog-page">
-      {/* <h2 style={{textAlign: 'center',
-  fontSize: '2em',
-  color: '#FF4D00',  
-  fontFamily: "'Montserrat', sans-serif", 
-  textTransform: 'uppercase',
-  marginBottom: '20px',
-  letterSpacing: '2px',
-  
-}}>Our Blog</h2> */}
-     
-      {/* Display the response message */}
       {message && <p className="response-message">{message}</p>}
-
-      {/* User Recipes Section */}
+      {/* console.log("\n reached here") */}
       <div className="user-recipes">
-        {/* <h2 className="section-title">Shared Delights</h2> */}
         <ul className="recipe-list">
           {userRecipes.map((recipe) => (
             <li key={recipe.id} className="recipe-list-item">

@@ -39,7 +39,7 @@
     flex-direction: column;
     background-color: #f0f0f0;
     transform: rotateY(180deg);
-    padding: 40px; /* Add padding to the back content */
+    padding: 40px; 
     border-radius: 10px;
   }
   
@@ -58,7 +58,7 @@
     font-size: 1em;
     text-align: justify;
     margin: 0;
-    padding: 40px; /* Add padding to the back content */
+    padding: 40px; 
 
   }
   

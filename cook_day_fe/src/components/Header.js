@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.css'; // Import the CSS for styling the header
+import './Header.css'; 
 import { Link,useLocation } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
 
-  // Determine the title based on the current route
+  
   const getTitle = () => {
     switch (location.pathname) {
       case '/':
@@ -25,8 +25,7 @@ const Header = () => {
         <img src="/logo/kangacook_logo.svg" alt="Logo" />
       </div>
       <div className="site-name">
-        {/* <h1 >{getTitle()}</h1> */}
-                  <h2 style={{textAlign: 'center',
+          <h2 style={{textAlign: 'center',
             fontSize: '2em',
             color: '#FF4D00',  
             fontFamily: "'Montserrat', sans-serif", 
