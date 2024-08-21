@@ -1,6 +1,6 @@
-# KangaCook
+# KangaCook_OA
 
-## KangaCook - Your Ultimate Recipe Sharing Platform
+## KangaCook_OA - Your Ultimate Recipe Sharing Platform
 KangaCook is a dynamic and interactive web application designed to bring food enthusiasts together. Whether you're a seasoned chef or just starting out, KangaCook offers a platform to discover, share, and explore a wide variety of recipes from around the world.
 
 ## Features
